@@ -1,0 +1,162 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+  * {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+
+      --Violet: hsl(257, 40%, 49%);
+      --Soft_Magenta: hsl(300, 69%, 71%);
+  }
+
+  body {
+      background: var(--Violet);
+      background-image: url(images/bg-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 12% 10.5% 8%;
+
+  }
+
+  header {
+      margin-bottom: 14%;
+  }
+
+  header img {
+      width: 50%;
+  }
+
+  section {
+      text-align: center;
+  }
+
+  h1 {
+      font-weight: 600;
+      margin-top: 18%;
+      font-size: 22px;
+  }
+
+  section {
+      margin-bottom: 30%;
+  }
+
+  p {
+      font-size: 14px;
+      font-weight: 400;
+  }
+
+  button {
+      margin-top: 7%;
+      height: 2.3rem;
+      width: 60%;
+      padding: 8px;
+      border-radius: 15px;
+      border: none;
+      font-size: 10px;
+      color: var(--Violet)
+  }
+
+
+  footer {
+      text-align: center;
+
+  }
+
+  .social-network a {
+      color: white;
+      border-radius: 50%;
+      width: 28px;
+      height: 13px;
+      margin-bottom: 40px;
+      padding-top: 13px;
+      text-decoration: none;
+      border: 1px solid;
+
+  }
+
+  button:hover {
+      background: var(--Soft_Magenta);
+      color: white;
+
+  }
+
+  .attribution {
+      font-size: 11px;
+      text-align: center;
+  }
+
+  .attribution a {
+      color: hsl(342, 45%, 44%);
+  }
+
+  @media screen and (min-width: 1440px) {
+      body {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 5%;
+          background-image: url(images/bg-desktop.svg);
+      }
+
+      header {
+          width: 100%;
+          height: 100px;
+          margin-bottom: 4%;
+
+      }
+
+      header img {}
+
+      body img {
+          width: 47%;
+          height: 80%;
+          margin-right: 6%;
+      }
+
+      section {
+          width: 47%;
+          height: 30%;
+          text-align: left;
+          margin: 0;
+      }
+
+      h1 {
+          margin: 0;
+          font-size: 39.6px;
+          font-weight: 600;
+          color: white;
+      }
+
+      p {
+          color: white;
+          font-size: 18px;
+          line-height: 1.5rem;
+      }
+
+      footer {
+          width: 100%;
+          text-align: end;
+          padding-right: 4%;
+
+      }
+
+      .social-network a {
+          text-align: center;
+          width: 3%;
+          border-top-width: 1px;
+          padding-top: 20px;
+          height: 20px;
+      }
+
+
+      button {
+          height: 15%;
+          width: 40%;
+          font-size: 18px;
+          border-radius: 27px;
+      }
+
+
+  }
